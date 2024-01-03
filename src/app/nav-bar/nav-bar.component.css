@@ -32,12 +32,15 @@
   color: #fff;
 }
 
-.active {
-  color: #ff4a57;
+.beautiful-hover-active {
   text-decoration: underline;
+   display: inline-block;
+  text-underline-offset: 2px; /* Adjusts the distance between text and underline */
+  text-decoration-thickness: 2px; /* Increases the thickness of the underline */
+  text-decoration-color: #ff4a57; /* Changes the color of the underline */
 }
 
 .nav-bar{
-  -webkit-backdrop-filter: blur(8px);
+   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 }

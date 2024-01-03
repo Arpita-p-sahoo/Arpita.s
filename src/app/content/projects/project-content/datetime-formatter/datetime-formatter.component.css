@@ -1,7 +1,8 @@
-i{
+i {
     font-size: 1.5rem;
-}
-.bn3 {
+  }
+  
+  .bn3 {
     display: inline-block;
     padding: 0.5em 1.7em;
     margin: 0 0.1em 0.1em 0;
@@ -21,4 +22,20 @@ i{
   .bn3:hover {
     color: #fff;
     background-color: #ff4a57;
+  }
+  
+  .github {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: fit-content;
+  }
+    button:disabled{
+      cursor: not-allowed;
+     
+    }
+  
+  .bxl-github {
+    margin-left: 5px;
+    /* Adjust this value to your desired spacing */
   }

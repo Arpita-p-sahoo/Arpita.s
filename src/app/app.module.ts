@@ -16,6 +16,9 @@ import { ProjectsComponent } from './content/projects/projects.component';
 import { BlogsComponent } from './content/blogs/blogs.component';
 import { TalksComponent } from './content/talks/talks.component';
 import { TelephonyChatComponent } from './content/projects/project-content/telephony-chat/telephony-chat.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DatetimeFormatterComponent } from './content/projects/project-content/datetime-formatter/datetime-formatter.component';
+import { WorkspaceComponent } from './workspace/workspace.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,10 +31,13 @@ import { TelephonyChatComponent } from './content/projects/project-content/telep
     ProjectsComponent,
     BlogsComponent,
     TalksComponent,
-    TelephonyChatComponent
+    TelephonyChatComponent,
+    DatetimeFormatterComponent,
+    WorkspaceComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule ,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,

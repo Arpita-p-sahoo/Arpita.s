@@ -1,4 +1,3 @@
-
 <div style="background-color: #232639;color:#fff;padding-top: 70px;" class="overflow-auto vh-100 d-flex ">
     <div class="container ">
         <div class="row">
@@ -17,36 +16,31 @@
                                 <h2>{{item.orgName}}</h2>
                                 <p>{{item.Experience}}</p>
                             </div>
-                        </button></div>
+                        </button>
+                    </div>
                 </div>
                 <div class="">
                     <p>Experience</p>
                     <h1>Community <span style="color: #ff4a57;">Experience</span></h1>
-                    
+
                 </div>
                 <div class="d-flex flex-row bd-highlight mb-3 mt-4">
                     <div class="p-2 bd-highlight" *ngFor="let item of CommunityExperience">
-                        <button class="card" style="padding: 0;" (click)="openDialog(item.dialogComp)">
-                            <img [src]="item.logo" alt="Card Image">
-                            <div class="overlay">
-                                <p class="text">{{item.orgName}}</p>
+                        <button class="card" (click)="openDialog(item.dialogComp)">
+                            <div class="circle">
+                                <img [src]="item.logo" alt="Company Logo">
+                            </div>
+                            <div class="text mt-4">
+                                <h2>{{item.orgName}}</h2>
+                                <p>{{item.degignation}}</p>
                             </div>
                         </button>
                     </div>
+                    
                 </div>
-                <div class="row">
-                    <div class="d-flex flex-row bd-highlight mb-3 mt-4">
-                        <button class="p-2 bd-highlight" (click)="ActiveTab('Projects')">Projects</button>
-                        <button class="p-2 bd-highlight" (click)="ActiveTab('Talks')">Talks</button>
-                        <button class="p-2 bd-highlight" (click)="ActiveTab('Blogs')">Blogs</button>
-                      </div>
-                      <hr>
-                      <app-projects *ngIf="isActiveTab == 'Projects'"></app-projects>
-                      <app-talks *ngIf="isActiveTab == 'Talks'"></app-talks>
-                      <app-blogs *ngIf="isActiveTab == 'Blogs'"></app-blogs>
-                </div>
+
             </div>
         </div>
-        
+
     </div>
 </div>

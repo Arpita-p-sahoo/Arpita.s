@@ -11,10 +11,16 @@
         
         <div class="col">
             <div class="d-flex flex-row-reverse bd-highlight ">
-                <div class="p-2 bd-highlight"><a class="beautiful-hover" routerLink="hireme">Hire me</a></div>
-                <div class="p-2 bd-highlight"><a class="beautiful-hover" routerLink="about">About me</a></div>
-                <div class="p-2 bd-highlight"><a class="beautiful-hover" routerLink="experience">Workspace</a></div>
-                <div class="p-2 bd-highlight"><a class="beautiful-hover" routerLink="">Home</a></div>
+                <div class="p-2 bd-highlight"><a class="beautiful-hover" routerLink="hireme" (click)="isActive('Hireme')"
+                    [ngClass]="{'beautiful-hover-active':isActiveTab=='Hireme'}">Hire me</a></div>
+                <div class="p-2 bd-highlight"><a class="beautiful-hover" routerLink="about" (click)="isActive('About')"
+                    [ngClass]="{'beautiful-hover-active':isActiveTab=='About'}">About me</a></div>
+                <!-- <div class="p-2 bd-highlight" ><a class="beautiful-hover"  routerLink="workspace"
+                    (click)="isActive('Workspace')" [ngClass]="{'beautiful-hover-active':isActiveTab=='Workspace'}">Workspace</a></div> -->
+                <div class="p-2 bd-highlight"><a class="beautiful-hover" routerLink="experience"
+                    (click)="isActive('Experience')" [ngClass]="{'beautiful-hover-active':isActiveTab=='Experience'}">Experience</a></div>
+                <div class="p-2 bd-highlight"><a class="beautiful-hover" routerLink="/"
+                    (click)="isActive('Home')" [ngClass]="{'beautiful-hover-active':isActiveTab=='Home'}">Home</a></div>
             </div>
         </div>
     </div>

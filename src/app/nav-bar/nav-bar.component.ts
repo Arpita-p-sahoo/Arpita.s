@@ -5,6 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.css']
 })
+
 export class NavBarComponent {
-  isActive(){}
+
+  isActiveTab = 'Home'
+
+  constructor(){}
+  isActive(val:any){
+    this.isActiveTab = val;
+  }
 }

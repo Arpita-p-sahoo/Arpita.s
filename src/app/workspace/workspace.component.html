@@ -1,0 +1,45 @@
+
+<div class="" style="background-color: #232639;color: #fff; padding-top: 70px;">
+    <div class="container vh-100 ">
+        <div class="row">
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <div class="container">
+                  <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  </div>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            <div class="d-flex flex-row bd-highlight mb-3 mt-4">
+                <button class="p-2 bd-highlight" (click)="ActiveTab('Projects')">Projects</button>
+                <button class="p-2 bd-highlight" (click)="ActiveTab('Talks')">Talks</button>
+                <button class="p-2 bd-highlight" (click)="ActiveTab('Blogs')">Blogs</button>
+              </div>
+              
+              <app-projects *ngIf="isActiveTab == 'Projects'"></app-projects>
+              <app-talks *ngIf="isActiveTab == 'Talks'"></app-talks>
+              <app-blogs *ngIf="isActiveTab == 'Blogs'"></app-blogs>
+        </div>
+    </div>
+</div>
+
+<!-- HTML !-->
+
+

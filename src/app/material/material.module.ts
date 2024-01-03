@@ -10,7 +10,7 @@ import { DEVFESTComponent } from './Dilogs/communityDialogs/devfest/devfest.comp
 import { WtmComponent } from './Dilogs/wtm/wtm.component';
 import { GdgComponent } from './Dilogs/gdg/gdg.component';
 import { ContatMeComponent } from './Dilogs/contat-me/contat-me.component';
-import { TodoComponent } from './Dilogs/todo/todo.component';
+import { TodoComponent } from '../content/projects/project-content/todo/todo.component';
 import { MatChipsModule } from '@angular/material/chips';
 
 const MaterialComponents=[
