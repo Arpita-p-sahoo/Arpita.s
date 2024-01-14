@@ -28,12 +28,13 @@ export class ExperienceComponent {
 
 
   openDialog(param:any){
+    console.log('ani,mal')
     this.dilog.open(param);
   }
 
-  ActiveTab(param:string){
-    this.isActiveTab = param;
-  }
+  // ActiveTab(param:string){
+  //   this.isActiveTab = param;
+  // }
 
 
 }
