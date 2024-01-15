@@ -4,7 +4,7 @@
     <div class="container">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"><i class='bx bxl-github p-2' ></i></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
@@ -15,6 +15,10 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="experience" (click)="isActive('Experience')"
               [ngClass]="{'beautiful-hover-active': isActiveTab === 'Experience'}">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="workspace" (click)="isActive('Workspace')"
+              [ngClass]="{'beautiful-hover-active': isActiveTab === 'Workspace'}">Workspace</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="about" (click)="isActive('About')"
@@ -28,4 +32,5 @@
       </div>
     </div>
   </nav>
+  <router-outlet></router-outlet>
   

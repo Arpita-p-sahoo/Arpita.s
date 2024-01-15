@@ -1,0 +1,18 @@
+<div style="background-color: #232639;color:#fff;padding-top: 70px;" class="overflow-auto vh-100 d-flex ">
+    <div class="container ">
+        <div class="row">
+            <div class="col" style="padding: 0;">
+                <div class="">
+                    <h1> <span style="color: #ff4a57;">WrokSpace</span></h1>
+                    <div class="d-flex flex-row bd-highlight mb-3" style="color: #fff;">
+                        <div type="button" class="p-2 bd-highlight" (click)="MoveToProjects('Projects')" [ngClass]="{'beautiful-hover-active':IsActiveTab === 'Projects'}">Projects</div>
+                        <div type="button" class="p-2 bd-highlight" (click)="MoveToProjects('Talks')" [ngClass]="{'beautiful-hover-active':IsActiveTab === 'Talks'}">Talks</div>
+                        <div  type="button" class="p-2 bd-highlight" (click)="MoveToProjects('Blogs')" [ngClass]="{'beautiful-hover-active':IsActiveTab === 'Blogs'}">Blog</div>
+                      </div>
+                </div>
+                <app-projects *ngIf="IsActiveTab === 'Projects'"></app-projects>
+            </div>
+        </div>
+
+    </div>
+</div>
