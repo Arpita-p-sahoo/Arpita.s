@@ -1,23 +1,13 @@
-<!-- <div class="d-flex flex-row bd-highlight mt-3 mb-3">
-  <div class="p-2 bd-highlight">
-      <div class="horizontal-card">
-          <img class="card-image" src="../../assets/talks-image/github_talks.jpeg" alt="Card Image">
-          <div class="card-content">
-              <div class="card-title">Your Title jhgfhfty</div>
-          </div>
-      </div>
-  </div>
-</div> -->
-
-
 <div class="container">
-  <div class="small-card">
-    <div class="card-icon">
-      <span class="glyphicon glyphicon-cog"></span>
-    </div>
-    <div class="card-content">
-      <div class="card-title">Your Title</div>
-      <!-- Additional content goes here -->
+  <div class="row">
+    <div class="col-md-2" *ngFor="let myProject of Projects">
+      <div class="small-card" type="button" (click)="openDialog(myProject.component)">
+        <span class="icon" style="padding: 9px;">
+          <!-- Add your icon here, for example, using FontAwesome -->
+          <i class='bx bx-info-circle'></i>
+        </span>
+        {{myProject.title}}
+      </div>
     </div>
   </div>
 </div>
