@@ -28,7 +28,6 @@ export class ExperienceComponent {
 
 
   openDialog(param:any){
-    console.log('ani,mal')
     this.dilog.open(param);
   }
 

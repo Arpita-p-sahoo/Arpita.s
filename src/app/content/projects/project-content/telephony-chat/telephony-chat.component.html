@@ -1,33 +1,16 @@
 <div class="container overflow-auto" style="padding: 20px; ">
-  <h5>Telephony and chat Application</h5>
+  <ng-container *ngFor="let item of telephonyChat">
+    <h5>Telephony and chat Application</h5>
   <h6 class="mt-4">Description </h6>
-  <p>In crafting our chat and telephony app, our team focused on a seamless user experience. We prioritized an intuitive interface, real-time communication, and top-notch call quality. By leveraging APIs, we optimized functionalities, ensuring smooth interaction and timely updates while upholding robust security measures. The result? A versatile, dependable app that exceeds expectations, offering a refined, user-centric experience.
+  <p>{{item.text}}
   </p>
   <h6 class="mt-2">Duration</h6>
-  <p>2 Months</p>
+  <p>{{item.duration}} </p>
   <h6>Tech Stracks</h6>
-  <mat-chip-listbox aria-label="Dog selection">
-    <mat-chip>
-      Angular
-    </mat-chip>
-    <mat-chip>
-      Typescript
-    </mat-chip>
-    <mat-chip>
-      Bootstrap
-    </mat-chip>
-    <mat-chip>
-      HTML and CSS
-    </mat-chip>
-    <mat-chip>
-     Github
-    </mat-chip>
-    <mat-chip>
-      Gitlab
+  <mat-chip-listbox >
+    <mat-chip *ngFor="let i of item.skills">
+     {{i}}
     </mat-chip>
   </mat-chip-listbox>
-  <!-- <button mat-stroked-button >Primary</button> -->
-  <!-- <div class="mt-4">
-    <a href="https://www.visnet.in/" class="bn3">Company Website</a>
-  </div> -->
+  </ng-container>
 </div>
