@@ -1,13 +1,50 @@
-/* your-component.component.css */
-
-.beautiful-hover-active {
-  color: #ffc107 !important; /* Yellow color for active link */
+.navbar{
+  background-color: #232639;
+  color: #FF4A57;
+  margin: 20px;
+  height: 50px;
+  padding: 0.8rem;
+  /* border: 1px solid #fff; */
 }
-
-.navbar-dark .navbar-nav .nav-link {
-  color: #fff; /* Default text color */
+.navbar-brand{
+  /* font-size: 1.5rem; */
+  font-weight: bold;
+  color: #fff;
 }
-
-.navbar-dark .navbar-toggler-icon {
-  background-color: #fff; /* Color of the hamburger icon */
+.navbar-toggler{
+  border: none;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.navbar-toggler:focus{
+  box-shadow: none;
+  outline: none ;
+}
+.btn-close{
+  background-color: #fff;
+}
+.btn-close:focus{
+  box-shadow: none;
+  outline: none ;
+}
+.nav-link{
+  color: #fff;
+}
+.nav-link:hover{
+   color: #FF4A57;
+}
+.nav-link.active{
+  color:#FF4A57;
+}
+.nav-item{
+  color: #232639;
+}
+.offcanvas-body{
+  background: #232639;
+  backdrop-filter: blur(10px);
+}
+.offcanvas-header{
+  background: #232639;
+  backdrop-filter: blur(10px);
+  color: #fff;
 }

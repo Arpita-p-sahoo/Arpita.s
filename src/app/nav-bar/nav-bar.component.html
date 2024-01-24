@@ -1,10 +1,9 @@
 <!-- your-component.component.html -->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><i class='bx bxl-github p-2' ></i></span>
+      <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+        <span class="navbar-toggler-icon"><i class='bx bxl-github p-2'></i></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
@@ -12,6 +11,7 @@
             <a class="nav-link" routerLink="/" (click)="isActive('Home')"
               [ngClass]="{'beautiful-hover-active': isActiveTab === 'Home'}">Home</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" routerLink="experience" (click)="isActive('Experience')"
               [ngClass]="{'beautiful-hover-active': isActiveTab === 'Experience'}">Experience</a>
@@ -31,6 +31,40 @@
         </ul>
       </div>
     </div>
+  </nav> -->
+
+  <nav class="navbar navbar-expand-lg bg-transarent fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand me-auto" routerLink="/">ArpitaS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" style="color: #fff;background-color: #fff;"   data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ArpitaS</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link text  mx-lg-2" aria-current="page" routerLink="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" routerLink="workspace">Workspace</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" routerLink="experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" routerLink="about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" routerLink="hireme">Hire me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </nav>
-  <router-outlet></router-outlet>
+ 
   

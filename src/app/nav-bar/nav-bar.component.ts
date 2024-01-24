@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 export class NavBarComponent {
 
   isActiveTab = 'Home'
+  isNavbarCollapsed: boolean = true;
 
   constructor(){}
   isActive(val:any){    
@@ -23,4 +24,7 @@ export class NavBarComponent {
     { label: 'Home', route: '/' }
   ];
 
+  toggleNavbar() {
+    this.isNavbarCollapsed = !this.isNavbarCollapsed;
+  }
 }
