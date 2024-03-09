@@ -4,7 +4,9 @@ html, body { height: 100%; }
 body { margin: 0; font-family:'Poppins', sans-serif, sans-serif; background-color: #edede9; }
 
 /* global list and button styles */
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* CSS */
 .button-18 {

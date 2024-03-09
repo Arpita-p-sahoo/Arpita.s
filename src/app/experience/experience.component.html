@@ -3,9 +3,9 @@
         <div class="row">
             <div class="col" style="padding: 0;">
                 <div class="">
-                    <h1>Work <span style="color: #ff4a57;">Experience</span></h1>
+                    <h1 class="text-5xl mb-3">Work <span style="color: #ff4a57;">Experience</span></h1>
                 </div>
-                <div class="d-flex flex-row bd-highlight mt-3 mb-3">
+                <!-- <div class="d-flex flex-row bd-highlight mt-3 mb-3">
                     <div class="p-2 bd-highlight" *ngFor="let item of experience">
                         <button class="card" (click)="openDialog(item.dialogComp)">
                             <div class="circle">
@@ -17,7 +17,50 @@
                             </div>
                         </button>
                     </div>
+                </div> -->
+
+                <!-- <div class="row">
+                    <div class="col-md-4" *ngFor="let item of experience">
+                        <div class="max-w-sm rounded overflow-hidden shadow-lg" >
+                            <img class="w-full" [src]="item.logo" alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                              <p class="text-gray-700 text-base">
+                                Lorem i
+                              </p>
+                            </div>
+                            <div class="px-6 pt-4 pb-2">
+                              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                            </div>
+                          </div>
+                    </div>
+                </div> -->
+
+                <div class="grid grid-cols-4 gap-4">
+                    <div class="max-w-sm rounded overflow-hidden shadow-lg" *ngFor="let item of experience">
+                        <img class="w-full" [src]="item.logo" alt="Sunset in the mountains">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                            <p class="text-gray-700 text-base">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!
+                                Maiores et perferendis eaque, exercitationem praesentium nihil.
+                            </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                        </div>
+                    </div>
+
                 </div>
+
+
                 <div class="">
                     <h1>Community <span style="color: #ff4a57;">Experience</span></h1>
 
@@ -34,7 +77,7 @@
                             </div>
                         </button>
                     </div>
-                    
+
                 </div>
 
             </div>
